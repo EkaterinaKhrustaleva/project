@@ -1,0 +1,9 @@
+version: "1"
+services:
+  openmeeting:
+    image: apache/openmeetings:7.2.0
+    ports: 
+      - 5443:5443
+    volumes:
+      - /home/user/project/:/opt/omdata
+    network_mode: host
